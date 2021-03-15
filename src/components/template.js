@@ -13,9 +13,21 @@ const Template = async () => {
      
         </header>
 
-    `
-        return header;
-  
+        <button id="africa">Africa</button>
+        <button id="americas">America</button>
+        <button id="europe">europe</button>
+        <button id="asia">Asia</button>
+        <button id="oceania">oceania</button>
+       
+
+    `;
+    return header;
+    
+       
+        
+        
 };
+
+
 
   export default Template;

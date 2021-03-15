@@ -59,48 +59,65 @@ body{
     grid-template-columns:repeat(4, 1fr);
     margin-left: 5%;
     margin-right: 5%;
-    margin-top: 5rem;
+   
 
 
-}
-.content{
-
-    /* border:2px solid red; */
-    width:77%;
-    height:80%;
-    margin-bottom: 6rem;
+    .content{
     
-  
-    background-color: rgba(66, 66, 66, 0.089);
-
-
-}
-.content img{
-   border-radius: 0.5rem;
-    width:100%;
-    max-height:50%;
-    object-fit: cover;
-}
-
-.textos{
-/* border: 1px solid red; */
-    color: black;
-    font-size: 1.4rem;
-    width: 95%;
-    height: 20%;
+        /* border:2px solid red; */
+        width:77%;
+        height:80%;
+        margin-bottom: 6rem;
+        
+      
+        background-color: rgba(66, 66, 66, 0.089);
     
+        img{
+           border-radius: 0.5rem;
+            width:100%;
+            max-height:50%;
+            object-fit: cover;
+            
+        }
+    
+    }
+    .textos{
+    /* border: 1px solid red; */
+        color: black;
+        font-size: 1.4rem;
+        width: 95%;
+        height: 20%;
+        
+    
+        padding: 1rem;
+     
+     
+    }
+    .textos h3{
+    font-size: 1.3rem;
+    }
+}
+.africa{
+  @extend .app;
+}
+.americas{
+    @extend .app;
+  }
+  .europe{
+    @extend .app;
+  }
+  .asia{
+    @extend .app;
+  }
+  .oceania{
+    
+        @extend .app;
+     
+  }
+button{
+    margin-bottom: 5rem;
+}
 
-    padding: 1rem;
- 
- 
-}
-.textos h3{
-font-size: 1.3rem;
-}
-
-.inecesario{
-color:#369457;
-}
 @media screen and (max-width: 825px) {
     .app{
         grid-template-columns: 50% 50%;
@@ -125,4 +142,4 @@ color:#369457;
     header img{
         width:60%;
     }
-  }
+}
