@@ -1,4 +1,4 @@
-import "./styles/globales.scss";
+import "./styles/general.scss";
 import Template from "./components/template";
 import fetchData from "./components/principal";
 import filtro from "./components/filtrar";

@@ -12,13 +12,16 @@ const Template = async () => {
         <span class="header__span">Dark Mode</span>
      
         </header>
-
-        <button id="africa">Africa</button>
-        <button id="americas">America</button>
-        <button id="europe">europe</button>
-        <button id="asia">Asia</button>
-        <button id="oceania">oceania</button>
-       
+        <div class="filter--container">
+            <div class="filter--container__region">
+            <span class="filter__span">filtrar por : </span>
+                <button id="africa" class="region__button">Africa</button>
+                <button id="americas" class="region__button">America</button>
+                <button id="europe" class="region__container__button">europe</button>
+                <button id="asia" class="region__container__button">Asia</button>
+                <button id="oceania" class="region__button">oceania</button>
+            </div>
+            </div>
 
     `;
     return header;
