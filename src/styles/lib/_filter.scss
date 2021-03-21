@@ -2,13 +2,59 @@
     display: flex;
     border: 1px solid chocolate;
     justify-content: center;
-    &__region{
-        display: flex;
-        flex-direction: column;
+    height: 8vh;
+    &__input{
+        width: 50%;
         border: 1px solid red;
+    }
+    &__region{
+        border: 1px solid red;
+        
+        display: flex;
+        background-color: $color-header;
+        flex-direction: column;
+
+        align-items: center;
+        width: 10%;
+        height: 5vh;
+        span{
+           font-size: 2rem;
+           font-weight: 600;
+        }
+        
+    }
+    &__buton{
+        display: none;
+        position: relative;
+        top: 2rem;
+        background-color: $color-claro;
+        padding: 1rem;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
         button{
-            border: none;
+             border: none;
+             display: flex;
+             font-size: 1.4rem;
+             background-color: $color-claro;
+             margin-top: 1rem;
+             margin-bottom: 1rem;
+             cursor: pointer;
+             padding-left: 1.7rem;
+
+
+        }
+        
+    }
+    &__region:hover{
+        .filter--container__buton{
+            display: flex;
         }
     }
     
 }
+@media (max-width: 430px) {
+    .filter--container{
+        display: none;
+    }
+  }

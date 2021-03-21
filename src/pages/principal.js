@@ -1,10 +1,10 @@
+import getData from "../utils/getData"
 
 
-
-async function fetchData(url,clase){
+async function Home(url,clase){
     const app = document.querySelector(clase)
-    const response = await fetch(url);  
-    const data = await response.json()
+
+    const data = await getData(url);
     
 
     const every=[]
@@ -32,10 +32,12 @@ async function fetchData(url,clase){
         const nickname = document.createElement('h3')
         nickname.textContent= "Capital:  " +data.capital;
 
-       
+       const vermas = document.createElement('a');
+       vermas.textContent= "Ver mas..."
+       vermas.setAttribute('href', '../dist/pais.html');
         
            
-        textos.append(name,occupations,status,nickname)
+        textos.append(name,occupations,status,nickname,vermas)
         div.append(img,textos)
       
         every.push(div)
@@ -46,4 +48,4 @@ async function fetchData(url,clase){
 }
 
 
-export default fetchData;
+export default Home;

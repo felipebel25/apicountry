@@ -1,4 +1,4 @@
-import fetchData from "./principal.js";
+import Home from "../pages/principal.js";
 
 function removeAllChildNodes(parent) {
     while (parent.firstChild) {
@@ -329,7 +329,7 @@ async function filtro(reg){
           
             
         }
-      fetchData(`https://restcountries.eu/rest/v2/region/${reg}`,`.${reg}`)
+      Home(`region/${reg}`,`.${reg}`)
 
      
     })

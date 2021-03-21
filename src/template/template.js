@@ -13,13 +13,19 @@ const Template = async () => {
      
         </header>
         <div class="filter--container">
+            <div class= "filter--container__input">
+                <input type="text">
+            </div>
+
             <div class="filter--container__region">
-            <span class="filter__span">filtrar por : </span>
+            <span class="filter__span">filter by Region </span>
+            <div class="filter--container__buton">
                 <button id="africa" class="region__button">Africa</button>
                 <button id="americas" class="region__button">America</button>
                 <button id="europe" class="region__container__button">europe</button>
                 <button id="asia" class="region__container__button">Asia</button>
                 <button id="oceania" class="region__button">oceania</button>
+            </div>
             </div>
             </div>
 

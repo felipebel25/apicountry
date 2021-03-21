@@ -8,7 +8,7 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'),
         filename: 'main.js'
     },
-    mode: "production",
+    mode: "development",
     resolve: {
         extensions: ['.js']
     },
@@ -35,8 +35,12 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({
             template: './public/index.html',
-            filename: 'index.html'
-            }),
+            filename: 'index.html',
+            template: './public/pais.html',
+            filename: 'pais.html'
+            }
+            ),
+            
         new MiniCssExtractPlugin({
             filename: '[name].css'
         })    
