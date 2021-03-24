@@ -34,7 +34,7 @@ async function Home(url,clase){
 
        const vermas = document.createElement('a');
        vermas.textContent= "Ver mas..."
-       vermas.setAttribute('href', '../dist/pais.html');
+       vermas.setAttribute('href', `/pais.html?name=${data.name}`);
         
            
         textos.append(name,occupations,status,nickname,vermas)
@@ -46,6 +46,6 @@ async function Home(url,clase){
     app.append(...every)
 
 }
-
+const input = document.getElementById('inputpais')
 
 export default Home;

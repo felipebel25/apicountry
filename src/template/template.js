@@ -14,7 +14,7 @@ const Template = async () => {
         </header>
         <div class="filter--container">
             <div class= "filter--container__input">
-                <input type="text">
+                <input type="text" id="inputpais">
             </div>
 
             <div class="filter--container__region">
@@ -28,15 +28,16 @@ const Template = async () => {
             </div>
             </div>
             </div>
+            
 
-    `;
+    `
+    ;
     return header;
+
+        
     
-       
-        
-        
+    
 };
 
 
-
-  export default Template;
+export default Template;
