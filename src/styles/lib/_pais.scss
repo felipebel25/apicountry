@@ -92,20 +92,21 @@
             display: inline;
             
         width: 90vw;
-        height: 150vh;
+        height: 100vh;
         margin: 0rem;
        
        &__img{
-            width: 90%;
-            height: 40%;
+            width: 100%;
+          
+            margin-top: 3rem;
             img{
-                height:100%;
+                height:70%;
             }
        }
        &__textos{
             display: inline;
-        background-color: $color-header;
-            
+            background-color: $color-header;
+         
                    
             margin-top: 0rem;
             flex-direction: column;
@@ -119,6 +120,7 @@
             font-weight: 600;
             text-align: left;
             margin-bottom: 2rem;
+            margin-top: 3rem;
         }
         h3{
             font-size: 2rem;
@@ -158,8 +160,8 @@
     border: 1px solid $color-header;
     border-radius: 1.4rem;
     position: absolute;
-    top: 10rem;
-    left: 4rem;
+    top: 12rem;
+    left: 2rem;
     width: 40%;
     height: 6%;
     text-decoration: none;
