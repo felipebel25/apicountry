@@ -97,10 +97,10 @@
        
        &__img{
             width: 100%;
-          
-            margin-top: 3rem;
+            height: auto;
+            margin-top: 8rem;
             img{
-                height:70%;
+                height:50%;
             }
        }
        &__textos{
@@ -160,10 +160,10 @@
     border: 1px solid $color-header;
     border-radius: 1.4rem;
     position: absolute;
-    top: 12rem;
+    top: 14rem;
     left: 2rem;
-    width: 40%;
-    height: 6%;
+    width: 35%;
+    height: 5%;
     text-decoration: none;
     background-color: $color-claro;
     font-size: 2rem;

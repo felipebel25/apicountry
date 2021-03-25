@@ -46,17 +46,17 @@
 @media (max-width: 430px) {
     .header{
         display: flex;
-        max-width: 99vw;
+        
         height: 15vh;
         a{
-            margin-left: 1.6rem;
+            margin-left: 1rem;
             font-size: 0.9rem;
             
 
 
         }
         .dark-mode{
-            margin-left: 10%;
+            margin-left: 20%;
             
             width: 30%;
             &__svg{
@@ -64,7 +64,7 @@
                 justify-content:left;
                 align-items: flex-start;
                 position: absolute;
-                width: 6%;
+                width: 10%;
                 right: 9rem;
                 
                
@@ -74,7 +74,7 @@
              
                 
                 font-family: $fuente1;
-                font-size: 1.2rem;
+                font-size: 1.7rem;
                 font-weight: 600;
                 
             }
