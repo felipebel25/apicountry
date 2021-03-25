@@ -2,18 +2,26 @@
 .header{
     display: flex;
     border-bottom: 2px solid grey;
-    box-shadow:  0px -9px 20px 4px black;
+    box-shadow: -1px -2px 0px 4px $color-oscuro;
+
     background-color:  $color-claro;
     height: 8vh;
     align-items: center;
-    &__h1{
-
-        font-size: 2.5rem;
+    a{
+                    
+        font-size: 1.4rem;
         margin-left: 9rem;
-        font-weight: 800;
-        
-        
+        font-weight: 900;
+        text-decoration: none;
+        color: $color-letra;
     }
+
+    .dark-mode{
+        width: 10%;
+    
+        display: flex;
+        align-items: center;
+        margin-left: 60%;
     &__svg{
         display: flex;
         justify-content:left;
@@ -24,13 +32,54 @@
         
        
     }
-    &__span{
-        position: absolute;
-        right: 6.8rem;
+    span{
+        
+     
+        
         font-family: $fuente1;
         font-size: 2rem;
         font-weight: 600;
         
     }
-
 }
+}
+@media (max-width: 430px) {
+    .header{
+        display: flex;
+        
+        height: 15vh;
+        a{
+            margin-left: 1.6rem;
+            font-size: 0.9rem;
+            
+
+
+        }
+        .dark-mode{
+            margin-left: 10%;
+            
+            width: 30%;
+            &__svg{
+                display: flex;
+                justify-content:left;
+                align-items: flex-start;
+                position: absolute;
+                width: 6%;
+                right: 9rem;
+                
+               
+            }
+            span{
+                
+             
+                
+                font-family: $fuente1;
+                font-size: 1.2rem;
+                font-weight: 600;
+                
+            }
+           
+        }
+      }
+    }
+  

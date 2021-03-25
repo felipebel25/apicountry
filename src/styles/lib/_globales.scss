@@ -1,19 +1,24 @@
 $color-claro: #FFFFFF;
-$color-header: hsl(0, 0%, 98%);
+$color-header: hsl(0, 0%, 96%);
+$color-oscuro: hsl(0, 0%, 52%);
+$color-letra: black;
 $fuente1: 'Nunito Sans', sans-serif;
 *{
     padding:0;
     margin: 0;
+    box-sizing: border-box;
 }
 html{
     font-size: 62.5%;
+    box-sizing: border-box;
+    
 }
 body{
     background-color: $color-claro;
-    color: black;
+    color: $color-letra;
     font-family: $fuente1 ;
 }
-.main{
+.header{
     background-color: $color-header;
     height:80vh;
 }

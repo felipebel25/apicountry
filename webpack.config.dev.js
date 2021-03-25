@@ -39,6 +39,7 @@ module.exports = {
         new HtmlWebpackPlugin({
             filename: 'index.html',
             template: './public/index.html',
+            chunks: ['main']
         }),
         new HtmlWebpackPlugin({
             filename: 'pais.html',

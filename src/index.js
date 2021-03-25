@@ -18,7 +18,7 @@ import inbut from "./template/input.js";
     const input = document.getElementById('inputpais')
     input.addEventListener("change", (evento)=>{
        let relleno = event.target.value;
-       const app = document.querySelector(".app")
+       const app = document.querySelector(".app" || ".pais")
        function removeAllChildNodes(parent) {
         while (parent.firstChild) {
             parent.removeChild(parent.firstChild);

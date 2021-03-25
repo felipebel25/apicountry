@@ -1,21 +1,21 @@
 .app{
+  width: auto;
+  height: 90%;
   background-color: $color-header;
   display: grid;
   grid-template-columns:repeat(4, 1fr);
-  margin-left: 5%;
-  margin-right: 5%;
- 
-
-
+  padding-left: 5%;
+  padding-right: 5%;
   .content{
   
       /* border:2px solid red; */
       width:77%;
       height:80%;
       margin-bottom: 6rem;
-      
+      border: white;
+      border-radius: 0.6rem;
     
-      background-color: rgba(66, 66, 66, 0.089);
+      background-color: $color-claro;
   
       img{
          border-radius: 0.5rem;
@@ -28,18 +28,24 @@
   }
   .textos{
   /* border: 1px solid red; */
-      color: black;
+      color: $color-letra;
       font-size: 1.4rem;
       width: 95%;
       height: 20%;
       
   
-      padding: 1rem;
-   
+      padding: 3rem;
+    h1{
+      font-size: 2.3rem;
+      font-weight: 600;
+      margin-bottom: 2rem;
+
+    }
    
   }
   .textos h3{
-  font-size: 1.3rem;
+    font-size: 1.3rem;
+    font-weight: 300;
   }
 }
 .africa{
@@ -60,6 +66,7 @@
    
 }
 
+
 @media screen and (max-width: 825px) {
   .app{
       grid-template-columns: 50% 50%;
@@ -77,6 +84,32 @@
 @media (max-width: 430px) {
   .app{
       grid-template-columns: 100%;
+      width: 100%;
+      .content{
+  
+        /* border:2px solid red; */
+        width:90%;
+        height:80%;
+        margin-bottom: 6rem;
+        border: white;
+        border-radius: 0.6rem;
+        margin-left: 5%;
+        margin-right: 5%;
+
+         margin-top: 10%;
+        
+        background-color: $color-claro;
+    
+        img{
+           border-radius: 0.5rem;
+            width:100%;
+            max-height:50%;
+            object-fit: cover;
+            
+        }
+    
+    }
+
   }
   .content h2{
       font-size: 1.5rem;    
